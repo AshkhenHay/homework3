@@ -2,13 +2,12 @@ package task1;
 
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.net.URL;
 
 public class BufferdInputStream {
 
 
-    public static void getPage(String address) throws IOException, URISyntaxException {
+    public static void getPage(String address) throws IOException {
         URL url = new URL(address);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
